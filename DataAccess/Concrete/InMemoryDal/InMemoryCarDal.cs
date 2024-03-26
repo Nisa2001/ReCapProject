@@ -9,7 +9,7 @@ using System.Linq;
 
 namespace DataAccess.Concrete.InMemoryDal
 {
-    public class InMemoryCarDal : ICarDal
+    public class InMemoryCarDal /* ICarDal*/
     {
         List<Car> _cars;
 

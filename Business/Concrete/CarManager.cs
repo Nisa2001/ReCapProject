@@ -9,17 +9,27 @@ using System.Threading.Tasks;
 
 namespace Business.Concrete
 {
-    public class CarManager: ICarService
+    public class CarManager : ICarService
     {
-        ICarDal _carDal;
-        public CarManager(ICarDal carDal)
+        public void Add(Car car)
         {
-            _carDal = carDal;
+            throw new NotImplementedException();
         }
 
         public List<Car> GetAll()
         {
-          return  _carDal.GetAll();
+            throw new NotImplementedException();
         }
+
+        public List<Car> GetAllByBrandId(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Car> GetByDailyPrice(decimal min, decimal max)
+        {
+            throw new NotImplementedException();
+        }
+
     }
 }

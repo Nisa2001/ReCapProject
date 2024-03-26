@@ -1,4 +1,5 @@
 ﻿using Business.Concrete;
+using DataAccess.Concrete.EntityFramwork;
 using DataAccess.Concrete.InMemoryDal;
 using System;
 using System.Text.Json.Serialization;
@@ -13,7 +14,7 @@ using System.Text.Json.Serialization;
 
 //Consolda test ediniz.
 
-CarManager carManager=new CarManager(new InMemoryCarDal());
+CarManager carManager=new CarManager(new EfCarDal());
 
 foreach (var car in carManager.GetAll())
 {
