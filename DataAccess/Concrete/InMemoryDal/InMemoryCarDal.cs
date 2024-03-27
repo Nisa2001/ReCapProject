@@ -6,10 +6,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Linq;
+using Entities.DTOs;
+using System.Linq.Expressions;
 
 namespace DataAccess.Concrete.InMemoryDal
 {
-    public class InMemoryCarDal /* ICarDal*/
+    public class InMemoryCarDal : ICarDal
     {
         List<Car> _cars;
 
@@ -51,6 +53,24 @@ namespace DataAccess.Concrete.InMemoryDal
             return _cars.Where(c=>c.Id == Id).ToList();
         }
 
-       
+        public List<Car> Ozelbirmethod()
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<CarDetailDto> GetCarDetails()
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Car> GetAll(Expression<Func<Car, bool>> filter = null)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Car Get(Expression<Func<Car, bool>> filter)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
